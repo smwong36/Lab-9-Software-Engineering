@@ -5,3 +5,12 @@ def encode(password):
         x = int(password[i]) +3
         new_string += str(x)
     return new_string
+
+# decode by rohan david
+
+def decode(password):
+    decoded_str = []
+    for i in password:
+        digit = chr(ord(i) - 3)
+        decoded_str.append(digit)
+    return ''.join(decoded_str)
